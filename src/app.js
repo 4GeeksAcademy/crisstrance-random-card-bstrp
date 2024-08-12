@@ -37,6 +37,8 @@ function newCard() {
 
 window.onload = function() {
   newCard();
+  setInterval(newCard, 3000);
 };
 document.querySelector("#randomize").addEventListener("click", newCard);
+
 // ♦ ♥ ♠ ♣
