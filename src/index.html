@@ -22,15 +22,28 @@
       <h1 class="text-center text-light">RANDOM CARD GENERATOR</h1>
 
       <div class="row d-flex justify-content-center" id="card">
-        <div class="col-4 bg-light rounded display-1">
-          <div>
-            <span class="my-6" id="top">♥</span>
+        <div
+          class="shadow col-4 bg-light rounded position-relative"
+          style="width: 260px; height: 400px; font-size: 80px;"
+        >
+          <div
+            class="position-absolute"
+            style="top: 0; left: 20px ; margin: 0; padding: 0px;"
+          >
+            <span id="top">♥</span>
           </div>
-          <div class="d-flex justify-content-center my-6">
+
+          <div
+            class="d-flex justify-content-center align-items-center position-absolute"
+            style="top: 50%; left: 50%; transform: translate(-50%, -50%);"
+          >
             <span id="number">7</span>
           </div>
-          <div class="d-flex justify-content-end">
-            <span id="end" style="transform: rotate(180deg);">♥</span>
+          <div
+            class="position-absolute"
+            style="bottom: 0; right: 20px; margin: 0; padding: 0px; transform: rotate(180deg);"
+          >
+            <span id="end">♥</span>
           </div>
         </div>
       </div>
